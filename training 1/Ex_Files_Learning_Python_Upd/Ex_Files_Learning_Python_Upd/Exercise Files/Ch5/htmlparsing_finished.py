@@ -55,6 +55,7 @@ def main():
   if f.mode == "r":
     contents = f.read() # read the entire file
     parser.feed(contents)
+    
   
   print ("%d meta tags encountered" % metacount)
 
