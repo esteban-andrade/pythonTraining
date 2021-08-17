@@ -10,3 +10,12 @@ if a and b:
     print('expression is true')
 else:
     print('expression is false')
+
+
+# and   AND
+# or    Or
+# not   Not
+# in    Value in set
+# not in    Value not in Set
+# is    Same Object Identity
+# is not    Not same object identity 

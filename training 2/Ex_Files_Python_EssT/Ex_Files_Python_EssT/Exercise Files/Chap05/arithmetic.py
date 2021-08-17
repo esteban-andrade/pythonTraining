@@ -3,6 +3,8 @@
 
 x = 5
 y = 3
-z = x + y
+z = x % y # // integer division will get integer
 
 print(f'result is {z}')
+
+

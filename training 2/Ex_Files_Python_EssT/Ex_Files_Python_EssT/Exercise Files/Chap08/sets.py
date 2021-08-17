@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 # Copyright 2009-2017 BHG http://bw.org/
 
+
+#Set is like a list that does not allow duplicate elements
+
+
 def main():
     a = set("We're gonna need a bigger boat.")
     b = set("I'm sorry, Dave. I'm afraid I can't do that.")

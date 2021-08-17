@@ -4,10 +4,14 @@
 def main():
     kitten('meow', 'grrr', 'purr')
 
-def kitten(*args):
+
+def kitten(*args):  # VARIABLE LENGHT ARGUMENT LIST
     if len(args):
         for s in args:
             print(s)
-    else: print('Meow.')
+    else:
+        print('Meow.')
 
-if __name__ == '__main__': main()
+
+if __name__ == '__main__':
+    main()
