@@ -2,7 +2,7 @@
 # Copyright 2009-2017 BHG http://bw.org/
 
 
-#Set is like a list that does not allow duplicate elements
+#Set is like a list that does not allow duplicate elements it is also not ordered
 
 
 def main():

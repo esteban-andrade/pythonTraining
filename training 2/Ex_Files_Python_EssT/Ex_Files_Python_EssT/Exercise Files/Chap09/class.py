@@ -5,6 +5,7 @@ class Duck:
     sound = 'Quack quack.'
     movement = 'Walks like a duck.'
 
+    # parameter of each method is always self, which is a reference to the object
     def quack(self):
         print(self.sound)
 
