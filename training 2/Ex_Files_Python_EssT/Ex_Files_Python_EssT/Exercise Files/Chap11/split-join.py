@@ -3,3 +3,12 @@
 
 s = 'This is a long string with a bunch of words in it.'
 print(s)
+
+#split will separate the string 
+print(s.split()) # this will change to a list
+
+l = s.split()
+
+s2 =" : ".join(l)
+# we
+print(s2)

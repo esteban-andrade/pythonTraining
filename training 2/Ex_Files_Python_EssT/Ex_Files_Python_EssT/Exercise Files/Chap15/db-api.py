@@ -3,6 +3,7 @@
 
 import sqlite3
 
+
 def main():
     print('connect')
     db = sqlite3.connect('db-api.db')
@@ -40,4 +41,6 @@ def main():
     print('close')
     db.close()
 
-if __name__ == '__main__': main()
+
+if __name__ == '__main__':
+    main()
