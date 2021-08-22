@@ -10,14 +10,14 @@ class Publication:
 
 class Periodical(Publication):
     def __init__(self, title, price, publisher, period):
-        super().__init__(title, price)
-        self.period = period
+        super().__init__(title, price) # this will call back the paremeteres from Punlication 
+        self.period = period # specific attributes from this class
         self.publisher = publisher
 
 
-class Book(Publication):
+class Book(Publication): # inherits from publication calss
     def __init__(self, title, author, pages, price):
-        super().__init__(title, price)
+        super().__init__(title, price) # passes values freom the def init to parent class to instanciate the objects values
         self.author = author
         self.pages = pages
 

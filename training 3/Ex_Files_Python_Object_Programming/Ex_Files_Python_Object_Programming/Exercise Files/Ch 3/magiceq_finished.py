@@ -10,7 +10,7 @@ class Book:
         self.price = price
 
     # the __eq__ method checks for equality between two objects
-    def __eq__(self, value):
+    def __eq__(self, value):  # value is the object it ie compared to
         if not isinstance(value, Book):
             raise ValueError("Can't compare book to non-book type")
 
@@ -18,14 +18,14 @@ class Book:
                 self.author == value.author and
                 self.price == value.price)
 
-    # the __ge__ establishes >= relationship with another obj
+    # the __ge__ establishes >= relationship with another obj   greater or equal
     def __ge__(self, value):
         if not isinstance(value, Book):
             raise ValueError("Can't compare book to non-book type")
 
         return self.price >= value.price
 
-    # the __lt__ establishes <= relationship with another obj
+    # the __lt__ establishes < relationship with another obj    lesss than
     def __lt__(self, value):
         if not isinstance(value, Book):
             raise ValueError("Can't compare book to non-book type")

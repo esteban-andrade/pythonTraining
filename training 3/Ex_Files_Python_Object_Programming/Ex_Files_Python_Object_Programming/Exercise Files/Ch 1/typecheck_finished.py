@@ -31,4 +31,4 @@ print(isinstance(b1, Book))
 print(isinstance(n1, Newspaper))
 
 print(isinstance(n2, Book))
-print(isinstance(n2, object))
+print(isinstance(n2, object))  # this will check whether if its an object type

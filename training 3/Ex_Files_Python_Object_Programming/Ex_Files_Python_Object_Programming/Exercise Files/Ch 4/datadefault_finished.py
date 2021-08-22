@@ -12,10 +12,10 @@ def price_func():
 @dataclass
 class Book:
     # you can define default values when attributes are declared
-    title: str = "No Title"
+    title: str = "No Title" # this is are the defaults
     author: str = "No Author"
     pages: int = 0
-    price: float = field(default_factory=price_func)
+    price: float = field(default_factory=price_func) # default factory will call function to give default value. TO use single value default should be the option 
 
 
 # Create a default book object

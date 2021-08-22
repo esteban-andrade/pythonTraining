@@ -6,18 +6,21 @@ class Book:
     # the "init" function is called when the instance is
     # created and ready to be initialized
     def __init__(self, title, pages, author, price):
+
+        # all of these are instance attributes
         self.title = title
         self.pages = pages
         self.author = author
         self.price = price
-        self.__secret = "This is a secret attribute"
+        self.__secret = "This is a secret attribute" #if a method tries to access this it will give an error if a method tries to access it. 
 
     # instance methods are defined like any other function, with the
     # first argument as the object ("self" is just a convention)
     def setDiscount(self, amount):
-        self._discount = amount
+        self._discount = amount  # the _ is intended to only be used undeneed a class 
 
     def getPrice(self):
+        # has attribute function . This checks if the attribute specified somewhere else exists
         if hasattr(self, "_discount"):
             return self.price - (self.price * self._discount)
         else:
@@ -39,4 +42,4 @@ print(b2.getPrice())
 # properties with double underscores are hidden by the interpreter
 print(b2._discount)
 # print(b2.__secret)
-# print(b2._Book__secret)
+# print(b2._Book__secret)  # this can be used to override the rule and access the method. This is good for inheritance. This could ensure that classes dont override parent classes.

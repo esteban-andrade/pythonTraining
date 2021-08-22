@@ -1,7 +1,7 @@
 # Python Object Oriented Programming by Joe Marini course example
 # Using data classes to represent data objects
 
-from dataclasses import dataclass
+from dataclasses import dataclass # only works from 3.7
 
 
 @dataclass

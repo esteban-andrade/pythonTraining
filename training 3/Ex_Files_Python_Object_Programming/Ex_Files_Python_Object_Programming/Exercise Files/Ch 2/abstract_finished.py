@@ -1,6 +1,7 @@
 # Python Object Oriented Programming by Joe Marini course example
 # Using Abstract Base Classes to enforce class constraints
 
+# this will call the abstract method class and use abstract classes 
 from abc import ABC, abstractmethod
 
 

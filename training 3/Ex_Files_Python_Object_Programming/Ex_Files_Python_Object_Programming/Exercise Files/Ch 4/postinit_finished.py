@@ -11,7 +11,7 @@ class Book:
     pages: int
     price: float
 
-    # the __post_init__ function lets us customize additional properties
+    # the __post_init__ function lets us customize additional properties # it creates an aditional attribute
     # after the object has been initialized via built-in __init__
     def __post_init__(self):
         self.description = f"{self.title} by {self.author}, {self.pages} pages"

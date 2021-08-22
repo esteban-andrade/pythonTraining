@@ -4,7 +4,7 @@
 from dataclasses import dataclass
 
 
-@dataclass(frozen=True)  # "The "frozen" parameter makes the class immutable
+@dataclass(frozen=True)  # "The "frozen" parameter makes the class immutable (cant be changed)
 class ImmutableClass:
     value1: str = "Value 1"
     value2: int = 0
